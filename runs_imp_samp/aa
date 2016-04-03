@@ -1,0 +1,12 @@
+for file in i*
+do
+echo $file
+ex $file <<_end
+2s/             ifunc/ 1.          ifunc, xmax/
+wq
+_end
+done
+
+100 .5 1. 1.  npts, a, b, eps
+1              ifunc
+

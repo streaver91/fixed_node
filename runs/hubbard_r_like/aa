@@ -1,0 +1,9 @@
+for file in $*
+do
+echo $file
+ex $file <<_end
+1s/random/hubbard_r_like/
+wq
+_end
+done
+#1,\$s/.5 .5 .2           fraction_positive, off_diag_mag, psig_noise/.5 2. .2           fraction_positive, off_diag_mag, psig_noise/

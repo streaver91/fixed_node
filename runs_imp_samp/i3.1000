@@ -1,0 +1,3 @@
+1000 5.e-5 1. 1.  npts, a, b, eps
+3  2.          ifunc, xmax
+

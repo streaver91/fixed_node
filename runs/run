@@ -1,0 +1,11 @@
+#!/bin/bash
+for file in $*
+do
+  in=$file
+  out=`echo $in | sed -e 's/i/o/'`
+  sum1=`echo $in | sed -e 's/i/summary1/'`
+  sum2=`echo $in | sed -e 's/i/summary2/'`
+  ~/fixed_node/fixed_node < $in > $out
+  mv summary1 $sum1
+  mv summary2 $sum2
+done

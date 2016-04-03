@@ -1,0 +1,55 @@
+The runs with:
+nosign         in the name have Hamiltonian with no sign problem
+correct_sign   in the name have psi_G with correct signs
+psig_exact     in the name have psi_G that is close to, but not precisely, exact
+Other runs have no special properties
+
+To compare the various FN energies look at the summary files.
+
+To look at the contributions to the parameter derivative of the FN energies, look at the lines with:
+gradient_FN1_FD, gradient_FN1, 1st+2*2nd terms, gradient_FN1_1, gradient_FN1_2, gradient_FN1_3
+
+There are 6 columns:
+col 1: gradient calculated numerically with finite differences (FD)
+col 2: gradient calculated using the deterministic equivalent of Eq. 102 in notes
+col 3: 1st term + 2 times 3rd term in Eq. 102
+col 4: 1st term in Eq. 102
+col 5: 2nd term in Eq. 102 (the one that is harder to calculate)
+col 6: 3rd term in Eq. 102
+
+This is for a set of 10 matrices all of which have no sign problem, so, the gradient is zero.  The 2nd term equals the 3rd. and -1/2 the 1st.
+-0.000001 -0.000000 -0.000000 -0.516975  0.258487  0.258487
+-0.000000  0.000000 -0.000000  0.120565 -0.060282 -0.060282
+-0.000000 -0.000000 -0.000000 -0.325845  0.162922  0.162922
+ 0.000001 -0.000000  0.000000 -0.321445  0.160723  0.160723
+-0.000000 -0.000000  0.000000 -0.494182  0.247091  0.247091
+ 0.000000  0.000000  0.000000  0.313968 -0.156984 -0.156984
+-0.000000  0.000000 -0.000000 -0.001444  0.000722  0.000722
+-0.000001  0.000000 -0.000000  0.055426 -0.027713 -0.027713
+-0.000001 -0.000000 -0.000000  0.121614 -0.060807 -0.060807
+ 0.000001  0.000000  0.000000  0.341710 -0.170855 -0.170855
+
+This is for a wavefunction that is close to the exact wavefn.  The 2nd term is nearly equal to the 3rd.  In the limit that the wavefn. is exact all 3 terms are 0.
+-0.002423 -0.002423 -0.002411 -0.005903  0.001734  0.001746
+-0.000180 -0.000181 -0.000187  0.002806 -0.001490 -0.001497
+-0.001209 -0.001209 -0.001217 -0.002618  0.000709  0.000700
+-0.000894 -0.000894 -0.000901 -0.008263  0.003688  0.003681
+-0.001415 -0.001415 -0.001422 -0.005859  0.002225  0.002218
+ 0.000883  0.000883  0.000882  0.003747 -0.001431 -0.001432
+-0.000283 -0.000284 -0.000290  0.002197 -0.001238 -0.001243
+ 0.000123  0.000125  0.000123  0.003575 -0.001724 -0.001726
+-0.000380 -0.000380 -0.000391  0.006628 -0.003498 -0.003510
+ 0.001152  0.001152  0.001147  0.003349 -0.001096 -0.001101
+
+If we look at the runs, o_psig_err.01_tau.02, o_psig_err.02_tau.02, o_psig_err.03_tau.02, we see that each of the
+3 terms increases linearly with the deviation of Psi_G from Psi_0, even
+-------------------------------------------------------------------------------------
+The plots, energy_gradient*.eps demonstrate the following:
+This plot demonstrates a few things:
+1) As expected the FN-DMC gradient has much smaller magnitude than the VMC gradient
+2) The VMC gradient and the VMC expression for the gradient evaluated for the DMC distribution are very close
+3) The approximate DMC gradients are accurate, i.e, the zero of the true DMC gradient is much closer to the zero of the
+   approx.  DMC gradients than to the zero of the VMC gradient 
+4) The new approximation for the FN-DMC gradient is more accurate than the FU2000 approximation.
+   In particular, FU2000 sometimes has a 2nd spurious zero.
+

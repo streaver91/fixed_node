@@ -1,0 +1,10 @@
+for file in $*
+do
+echo $file
+ex $file <<_end
+/fraction_positive, off_diag_mag, psig_noise/
+.t.
+s/.*/f                  psig_correct_sign/
+wq
+_end
+done

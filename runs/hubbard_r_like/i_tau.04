@@ -1,0 +1,5 @@
+hubbard_r_like             hamiltonian
+9 -20. .04          ndim, E_T, tau
+.5 .5 .2           fraction_positive, off_diag_mag, psig_noise
+f                  psig_correct_sign
+14255653765424561  irand_seed

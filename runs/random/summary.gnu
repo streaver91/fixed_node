@@ -1,0 +1,5 @@
+Calculate fraction of energy missing in VMC that is recovered by FN-PMC and 1 minus the overlap of Psi_FN*Psi_G with Psi_0*Psi_G
+--------------------------------------------------------------------------------------------------------------------------
+                                                                                   1 -      1 -      1 -                  
+ E_G        E_FN1     E_FN3     E_FN4     E_0       rec_FN1   rec_FN3   rec_FN4   ovlp_FN1 ovlp_FN3 ovlp_FN4 sign_cond_num
+--------------------------------------------------------------------------------------------------------------------------

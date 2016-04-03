@@ -1,0 +1,10 @@
+for file in $*
+do
+echo $file
+ex $file <<_end
+/psig_correct_sign/
+.t.
+s/.                  psig_correct_sign/f                  plot_deriv/
+wq
+_end
+done

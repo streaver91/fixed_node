@@ -1,0 +1,70 @@
+npts, a, b, eps=    1000  0.200000  1.000000  1.000000
+ifunc, xmax= 1  1.0000
+dpsi_da  0.109907  0.109907
+dpsi_db -0.009421 -0.009421
+Variational energy E, parameter deriv E_b=  4.975572 -0.284707
+1: <psi H psi> / <psi^2>  4.975572
+imp_fn=1,                rms=           0.76808
+imp_fn=psi**.5,          rms=           0.73694
+imp_fn=psi,              rms=           0.76586
+imp_fn=psi**2,           rms=           1.04824
+imp_fn=1+psi,            rms=           0.74704
+imp_fn=1+psi^2           rms=           0.75134
+imp_fn=imp_fn1           rms=           0.80453
+imp_fn=imp_fn2           rms=           0.86175
+imp_fn=Optimal -----     rms=           0.64300
+
+2: <psi_a H psi> / <psi_a psi>  2.706593
+imp_fn=1,                rms=           4.62541
+imp_fn=psi**.5,          rms=           4.36154
+imp_fn=psi,              rms=           4.50949
+imp_fn=psi**2,           rms=           7.16307
+imp_fn=1+psi,            rms=           4.42735
+imp_fn=1+psi^2           rms=           4.41301
+imp_fn=imp_fn1           rms=           4.92807
+imp_fn=imp_fn2           rms=           5.35484
+imp_fn=Optimal -----     rms=           3.76017
+
+3: <psi_a H psi> / <psi^2> -0.249017
+imp_fn=1,                rms=           0.97957
+imp_fn=psi**.5,          rms=           0.90282
+imp_fn=psi,              rms=           0.88090
+imp_fn=psi**2,           rms=           0.98242
+imp_fn=1+psi,            rms=           0.93112
+imp_fn=1+psi^2           rms=           0.93134
+imp_fn=imp_fn1           rms=           1.03513
+imp_fn=imp_fn2           rms=           1.11575
+imp_fn=Optimal -----     rms=           0.78871
+
+4: <psi_b H psi> / <psi_b psi>  1.644711
+imp_fn=1,                rms=           4.91306
+imp_fn=psi**.5,          rms=           8.41034
+imp_fn=psi,              rms=          22.09615
+imp_fn=psi**2,           rms=         367.24120
+imp_fn=1+psi,            rms=           5.63473
+imp_fn=1+psi^2           rms=           5.60701
+imp_fn=imp_fn1           rms=           4.88278
+imp_fn=imp_fn2           rms=           4.93910
+imp_fn=Optimal -----     rms=           2.99586
+
+5: <psi_b H psi> / <psi^2>  0.140582
+imp_fn=1,                rms=           0.49025
+imp_fn=psi**.5,          rms=           0.73068
+imp_fn=psi,              rms=           1.85610
+imp_fn=psi**2,           rms=          31.27472
+imp_fn=1+psi,            rms=           0.52928
+imp_fn=1+psi^2           rms=           0.53041
+imp_fn=imp_fn1           rms=           0.49301
+imp_fn=imp_fn2           rms=           0.50529
+imp_fn=Optimal -----     rms=           0.36968
+
+6: <psi_b (H-E) psi> / <psi^2>  0.140582
+imp_fn=1,                rms=           0.63557
+imp_fn=psi**.5,          rms=           0.92546
+imp_fn=psi,              rms=           2.07221
+imp_fn=psi**2,           rms=          31.64611
+imp_fn=1+psi,            rms=           0.70674
+imp_fn=1+psi^2           rms=           0.70924
+imp_fn=imp_fn1           rms=           0.63860
+imp_fn=imp_fn2           rms=           0.65625
+imp_fn=Optimal -----     rms=           0.48803

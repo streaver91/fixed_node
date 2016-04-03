@@ -1,0 +1,3 @@
+The files with "psig_exact" in the names are in fact runs with intentionally near exact but
+not precisely exact trial wavefunctions, because in the precisely exact case all 3 terms
+in the energy derivative are exactly zero.
